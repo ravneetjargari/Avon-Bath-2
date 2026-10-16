@@ -18,8 +18,8 @@ body{margin:0;font-family:var(--sans);color:var(--ink);background:#cbcece;line-h
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
-h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color: white;}
-h3{color: white;}
+h2{font-size:clamp(2.2rem,4.4vw,3.6rem)}
+
 p{margin:0 0 1em}
 .wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 var(--gutter)}
 .skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--ink);padding:10px 16px;z-index:200}
@@ -50,7 +50,7 @@ p{margin:0 0 1em}
 .is-solid .brand__light,.menu-open .brand__light{display:none}
 .is-solid .brand__dark,.menu-open .brand__dark{display:block}
 .nav__menu ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:clamp(20px,3vw,44px)}
-.nav__menu a:not(.btn){font-size:1.5rem;font-weight:800;letter-spacing:.06em;text-decoration:none;color:#fff;position:relative;padding:6px 0}
+.nav__menu a:not(.btn){font-size:1.1rem;font-weight:800;letter-spacing:.06em;text-decoration:none;color:#fff;position:relative;padding:6px 0}
 .nav__menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .nav__menu a:not(.btn):hover::after{transform:scaleX(1)}
 .is-solid .nav__menu a:not(.btn){color:var(--ink)}
@@ -113,7 +113,7 @@ p{margin:0 0 1em}
 .brands__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .brands__list li{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 .brands__list a{display:flex;align-items:center;justify-content:center;min-height:150px;font:500 clamp(1.8rem,3.4vw,2.8rem)/1 var(--serif);text-decoration:none;color:var(--ink);transition:background .3s,color .3s}
-.brands__list a:hover{background:var(--ink);color:#fff}
+
 .brands__note{text-align:center;color:var(--muted);margin:2rem 0 0;font-size:.95rem}
 
 /* Why */
@@ -287,3 +287,7 @@ p{margin:0 0 1em}
   .nav__menu a:not(.btn):hover{transform:none;background:none}
 }
 .brands .section__head h2{color:#000}
+.brands__list .brand-tile[aria-label="Align"] img{max-height:110px;max-width:90%}
+.brands__list a:hover{background:rgb(0, 110, 170,.6);color:var(--ink)}
+.brands__list .brand-tile[aria-label="Grohe"] img{max-height:110px;max-width:90%}
+.brands__list .brand-tile[aria-label="Riobel"] img{max-height:110px;max-width:90%}

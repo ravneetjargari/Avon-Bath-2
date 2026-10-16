@@ -291,3 +291,15 @@ p{margin:0 0 1em}
 .brands__list a:hover{background:rgb(0, 110, 170,.6);color:var(--ink)}
 .brands__list .brand-tile[aria-label="Grohe"] img{max-height:110px;max-width:90%}
 .brands__list .brand-tile[aria-label="Riobel"] img{max-height:110px;max-width:90%}
+
+/* Category pages */
+.page-hero{background:linear-gradient(135deg,#0c2230,#12384f 55%,#0d5a82);color:#fff;padding:calc(var(--header-h) + clamp(48px,8vw,110px)) 0 clamp(48px,7vw,90px)}
+.page-hero h1{font-size:clamp(2.8rem,7vw,5.5rem);font-weight:400}
+.page-hero p:not(.eyebrow){max-width:36rem;color:#e8eef2;margin:1rem 0 0}
+.page-hero .eyebrow a{text-decoration:none}
+.page-hero .eyebrow a:hover{text-decoration:underline}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.product h3{font-size:1.6rem;margin:16px 0 4px}
+.product p{color:var(--muted);font-size:.95rem;margin:0}
+@media (max-width:1024px){.products-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.products-grid{grid-template-columns:1fr}}

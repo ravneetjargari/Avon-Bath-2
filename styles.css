@@ -149,7 +149,7 @@ p{margin:0 0 1em}
 
 /* Contact */
 .contact{display:grid;grid-template-columns:4fr 6fr;gap:clamp(32px,6vw,100px)}
-.contact__phone{font:500 2rem var(--serif);margin:1.6rem 0 .3rem}
+.contact__phone{font:500 2rem ;margin:1.6rem 0 .8rem;font-size: 60px;}
 .contact__phone a{text-decoration:none}
 .contact__addr{color:var(--muted);font-size:.95rem}
 .form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
